@@ -133,8 +133,8 @@ def calculate_eps(X, centroids, label_set):
   return epsilons
 
 if __name__ == "__main__":
-  states = extract_states("data/expert_lampshade2_demos.hdf5")
-  one_demo = extract_one_demos("data/expert_lampshade2_demos.hdf5")
+  states = extract_states("./expert__demos.hdf5")
+  one_demo = extract_one_demos("./expert_demos.hdf5")
   X = states[:, :3]
   X_demos = one_demo[:, :3]
   
